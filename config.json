@@ -1,18 +1,18 @@
 {
-  "swaggerFilePath":"swagger.yaml",
+  "swaggerFileName":"",
   "restMngIntConfig":
     {
-      "host": "172.17.0.2",
+      "host": "",
       "port":"5554",
-      "auth": "admin:admin"
+      "auth": "user:pass"
     },
     "mpgwConfig": {
       "name":"",
-      "domain":"test",
+      "domain":"domain",
       "localHost":"127.0.0.1",
-      "localPort":"8005",
+      "localPort":"0000",
       "sslFrontSideHandler": false,
-      "sslObjectType":"server",
-      "sslObjectName":"test"
+      "sslObjectType":"",
+      "sslObjectName":""
     }
 }

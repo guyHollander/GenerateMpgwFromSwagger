@@ -51,6 +51,8 @@ function createPRules(path, callback){
           console.log(' fail to create result action')
         } else {
             // if successfully create Result action, creates proccesing rule
+            // var ruleMapJson = {"Match": {"value": matchName}, "Rule":{"value": ruleName}};
+            // policyMap.push(ruleMapJson);
             rmiFunctions.createRule(ruleName, dire, resultActionName, (resCode)=> {
               if(resCode != '200' && resCode !='201'){
                 console.log(' fail to create Rule  %s', name);
@@ -112,7 +114,7 @@ function createMpgw(mappedRulesArray){
 }
 
 // parse and validate the swagger file
-SwaggerParser.validate('./'+ config.swaggerFilePath, function(err, api) {
+SwaggerParser.validate('./'+ config.swaggerFileName, function(err, api) {
   if (err) {
     console.error(err);
   }
